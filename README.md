@@ -28,7 +28,7 @@ ssh-keygen -o
 
 git clone git@github.com:gitsuresh1/NanodegreeProject4.git
 
-git checkout circleci-project-setup
+git checkout main
 
 Environment Setup
 -
