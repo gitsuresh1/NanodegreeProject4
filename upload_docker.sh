@@ -10,9 +10,10 @@ dockerpath=nanodegreeproject4:latest
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login
+docker login --username dockerjsb
 
 # Step 3:
 # Push image to a docker repository
 docker tag nanodegreeproject4:latest dockerjsb/nanodegreeproimg:latest
+
 docker push dockerjsb/nanodegreeproimg:latest
