@@ -1,4 +1,2 @@
-# NanodegreeProject4
-# Template:[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>) 
-# Example:[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs) 
-# Example for specific branch:[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/?branch=teesloane-patch-5)
+# NanodegreeProject4 - project-ml-microservice-kubernetes
+[![CircleCI](https://circleci.com/gh/gitsuresh1/NanodegreeProject4/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/gitsuresh1/NanodegreeProject4/tree/circleci-project-setup)
