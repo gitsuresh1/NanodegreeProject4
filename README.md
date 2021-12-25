@@ -1,12 +1,16 @@
 # NanodegreeProject4 - project-ml-microservice-kubernetes
 [![CircleCI](https://circleci.com/gh/gitsuresh1/NanodegreeProject4/tree/main.svg?style=svg)](https://circleci.com/gh/gitsuresh1/NanodegreeProject4/tree/main)
 
-##Overview
+Overview
+-
+
 In this project a Machine Learning Microservice API is operationalized.
 
 Given a  pre-trained, sklearn model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on the data source site. This project tests your ability to operationalize a Python flask app—in a provided file, app.py—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
 
-###Project Tasks
+Project Tasks
+-
+
 Project goal is to operationalize this working, machine learning microservice using kubernetes, which is an open-source system for automating the management of containerized applications.
 Below are the steps perfromed 
 
@@ -26,7 +30,8 @@ git clone git@github.com:gitsuresh1/NanodegreeProject4.git
 
 git checkout circleci-project-setup
 
-##Environment Setup
+Environment Setup
+-
 Create a virtualenv and activate it
 
 python3 -m venv ~/.devops
@@ -41,7 +46,8 @@ Running app.py
 
 Standalone: python app.py
 
-###Docker Steps
+Docker Steps
+-
 docker login --username dockerjsb
 
 docker tag nanodegreeproject4:latest dockerjsb/nanodegreeproimg:latest
@@ -52,10 +58,12 @@ docker build -t nanodegreeproject4 .
 
 docker run -p 8080:80 nanodegreeproject4
 
-###Docker Script
+Docker Script
+-
 ./run_docker.sh
 
-##Installing Kubernetes
+Installing Kubernetes
+-
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
@@ -65,17 +73,19 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 sudo yum install conntrack-tools
 
-##Installing minikube
+Installing minikube
+-
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 sudo yum install socat
 
-##Kubernetes Script: 
+Kubernetes Script:
+-
 ./run_kubernetes.sh
 
-####Steps :
+Steps :
 minikube start
 
 kubectl run nanodegreeproimg --image=dockerjsb/nanodegreeproimg:latest --port=8080
