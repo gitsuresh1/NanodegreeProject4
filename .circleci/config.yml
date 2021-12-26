@@ -20,8 +20,6 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
             make install
       - save_cache:
           paths:
@@ -31,7 +29,6 @@ jobs:
       - run:
           name: run lint
           command: |
-            . venv/bin/activate
             make lint
 
 workflows:
