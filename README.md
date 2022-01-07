@@ -14,13 +14,13 @@ Project Tasks
 Project goal is to operationalize this working, machine learning microservice using kubernetes, which is an open-source system for automating the management of containerized applications.
 Below are the steps perfromed 
 
-Testing project code using linting
-Containerize this application using Docker
-Deploy your containerized application using Docker and make a prediction
-Improve the log statements in the source code for this application
-Configure Kubernetes and create a Kubernetes cluster
-Deploy a container using Kubernetes and make a prediction
-Upload a complete Github repo with CircleCI to indicate that your code has been tested
+*Testing project code using linting
+*Containerize this application using Docker
+*Deploy your containerized application using Docker and make a prediction
+*Improve the log statements in the source code for this application
+*Configure Kubernetes and create a Kubernetes cluster
+*Deploy a container using Kubernetes and make a prediction
+*Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
 GIT
 ---
@@ -28,7 +28,7 @@ ssh-keygen -o
 
 git clone git@github.com:gitsuresh1/NanodegreeProject4.git
 
-git checkout circleci-project-setup
+git checkout main
 
 Environment Setup
 -
